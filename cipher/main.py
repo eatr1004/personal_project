@@ -21,14 +21,14 @@ def caesar(start_text, shift_amount, cipher_direction):
     print(f"Here's the {cipher_direction}d result: {end_text}")
   
 while True:
-  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-  text = input("Type your message:\n").lower()
-  shift = int(input("Type the shift number:\n"))
-  caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-  response = input("Type 'yes' if you want to go again. Otherwise type 'no'. ")
-  if response == "no":
-    print("Goodbye")
-    break
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+    response = input("Type 'yes' if you want to go again. Otherwise type 'no'. ")
+    if response == "no":
+        print("Goodbye")
+        break
   
 
   
